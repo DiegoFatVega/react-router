@@ -1,5 +1,10 @@
+import AppHeader from "../components/AppHeader";
+import AppMain from "../components/AppMain";
+
 export default function HomePage() {
     return (
-        <h1>CIAONEEE</h1>
+        <AppHeader></AppHeader>
+
+
     )
 }
