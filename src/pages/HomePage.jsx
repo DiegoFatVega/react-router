@@ -1,15 +1,9 @@
-import AppFooter from "../components/AppFooter";
-import AppHeader from "../components/AppHeader";
-
-
 export default function HomePage() {
     return (
         <>
-            <AppHeader />
             <body className="text-center m-5 bg-warning ">
                 <h1>THIS IS MY HOME PAGE</h1>
             </body>
-            <AppFooter />
         </>
     )
 }

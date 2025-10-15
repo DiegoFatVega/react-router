@@ -3,6 +3,8 @@ import HomePage from "./pages/HomePage";
 import AboutUsPage from "./pages/AboutUsPage";
 import ProductsPage from "./pages/ProductsPage";
 
+import DefaultLayout from "./layouts/DefaultLayout";
+
 function App() {
 
 
@@ -10,9 +12,11 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path={'/'} element={<HomePage />} />
-          <Route path={'/AboutUs'} element={<AboutUsPage />} />
-          <Route path={'/Products'} element={<ProductsPage />} />
+          <Route element={<DefaultLayout />}>
+            <Route path={'/'} element={<HomePage />} />
+            <Route path={'/AboutUs'} element={<AboutUsPage />} />
+            <Route path={'/Products'} element={<ProductsPage />} />
+          </Route>
         </Routes>
       </BrowserRouter>
     </>
