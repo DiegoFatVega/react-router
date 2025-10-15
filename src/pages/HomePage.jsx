@@ -3,8 +3,9 @@ import AppMain from "../components/AppMain";
 
 export default function HomePage() {
     return (
-        <AppHeader></AppHeader>
-
-
+        <>
+            <AppHeader />
+            <AppMain />
+        </>
     )
 }
