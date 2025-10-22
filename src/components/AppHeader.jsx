@@ -1,22 +1,9 @@
 import { Link, NavLink } from "react-router-dom"
+
+import menu from "../data/menu"
+
 export default function AppHeader() {
-    const menu = [
-        {
-            id: 1,
-            text: 'Home',
-            link: '/'
-        },
-        {
-            id: 2,
-            text: 'About',
-            link: '/about'
-        },
-        {
-            id: 3,
-            text: 'Products',
-            link: '/products'
-        },
-    ]
+
     return (
         <header className=" ">
             <nav className="navbar bg-success mb-4">

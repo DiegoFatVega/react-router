@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom"
 
+import menu from "../data/menu"
+
 export default function AppFooter() {
 
     return (
@@ -7,9 +9,11 @@ export default function AppFooter() {
             <div className="container py-3">
                 <h2>Links</h2>
                 <ul className="list-unstyled">
-                    <li><Link to="/" className="text-info-emphasis text-decoration-none"> Home </Link></li>
-                    <li><Link to="/about" className="text-info-emphasis text-decoration-none"> About Us </Link></li>
-                    <li><Link to="/products" className="text-info-emphasis text-decoration-none"> Products </Link></li>
+                    {
+                        menu.map(item => <li key={item.id}>
+                            <Link to={item.link} className="text-info-emphasis text-decoration-none"> {item.text}</Link>
+                        </li>)
+                    }
                 </ul>
             </div>
         </footer >
