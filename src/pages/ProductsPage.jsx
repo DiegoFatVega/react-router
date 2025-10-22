@@ -4,9 +4,7 @@ export default function ProductsPage() {
 
     return (
         <>
-
             <AppMain />
-
         </>
     )
 }

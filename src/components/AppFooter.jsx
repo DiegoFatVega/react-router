@@ -7,9 +7,9 @@ export default function AppFooter() {
             <div className="container py-3">
                 <h2>Links</h2>
                 <ul className="list-unstyled">
-                    <li><Link to="/"><a href="" className="text-info-emphasis text-decoration-none"> Home</a></Link></li>
-                    <li><Link to="/AboutUs"><a href="" className="text-info-emphasis text-decoration-none"> About Us</a></Link></li>
-                    <li><Link to="/Products"><a href="" className="text-info-emphasis text-decoration-none"> Products</a></Link></li>
+                    <li><Link to="/" className="text-info-emphasis text-decoration-none"> Home </Link></li>
+                    <li><Link to="/about" className="text-info-emphasis text-decoration-none"> About Us </Link></li>
+                    <li><Link to="/products" className="text-info-emphasis text-decoration-none"> Products </Link></li>
                 </ul>
             </div>
         </footer >
