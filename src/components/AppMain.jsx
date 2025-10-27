@@ -1,13 +1,14 @@
 import axios from "axios"
 import { useState, useEffect } from "react"
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function AppMain() {
     const [data, setData] = useState([]);
-
+    const navigate = useNavigate();
     function fetchData() {
         axios.get('https://fakestoreapi.com/products')
             .then((res) => setData(res.data))
+            .catch(err => { console.log(err) })
     }
 
     useEffect(fetchData, []);
